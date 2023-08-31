@@ -1,12 +1,12 @@
 #!/usr/bin/env sh
 
 # Cursor
-hyprctl setcursor "$(jq -r .themes.cursor ~/.config/hypr/themes/summer-night/config.json)" 13
+hyprctl setcursor "$(jq -r .themes.cursor ~/.config/hypr/themes/summer-night/config.json)" 14
 # ===================
 
 
 # Monitor
-hyprctl keyword monitor ,highres,auto,1
+hyprctl keyword monitor, highres, auto, 1
 # ===================
 
 
