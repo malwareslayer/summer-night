@@ -15,7 +15,7 @@
   "custom/launcher": {
       "interval": "once",
       "format": "󰣇",
-      "on-click": "pkill rofi || rofi -show drun -threads 0 -font 'Ubuntu Regular 13' -sync -sort -disable-history -show-icons -xoffset -625 -yoffset -200",
+      "on-click": "pkill rofi || rofi -show drun -threads 0 -font 'Ubuntu Regular 15' -sync -sort -disable-history -show-icons -xoffset -625 -yoffset -200",
       "tooltip": false
   },
 
@@ -104,10 +104,10 @@
 
   "bluetooth": {
     "interval": 1,
-  	"format": "",
-  	"format-off": " ❌",
-  	"format-connected": "  {device_alias}  |  {num_connections}",
-  	"format-connected-battery": "  {device_alias}  {device_battery_percentage}%",
+  	"format": "🫐",
+  	"format-off": "🫐 ❌",
+  	"format-connected": "🫐  {device_alias}  |  {num_connections}",
+  	"format-connected-battery": "🫐  {device_alias}  {device_battery_percentage}%",
   	"tooltip": false
   },
 
@@ -140,7 +140,7 @@
 
   "custom/powermenu": {
     "format": "",
-    "on-click": "pkill rofi || rofi -show menu -font 'Ubuntu Regular 13' -modi 'menu:sh powermenu' -theme-str 'window {width: 450px;}' -theme-str 'inputbar {enabled: false;}' -theme-str 'listview {lines: 6;}' -xoffset 670 -yoffset -195",
+    "on-click": "pkill rofi || rofi -show menu -font 'Ubuntu Regular 15' -modi 'menu:sh powermenu' -theme-str 'window {width: 450px;}' -theme-str 'inputbar {enabled: false;}' -theme-str 'listview {lines: 6;}' -xoffset 670 -yoffset -195",
     "tooltip": false
   }
 }
