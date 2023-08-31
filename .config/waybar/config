@@ -1,0 +1,146 @@
+{
+  "margin-top": 0,
+  "margin-left": 60,
+  "margin-bottom": 0,
+  "margin-right": 60,
+  "height": 60,
+  "layer": "top",
+  "position": "top",
+  "output": "",
+  "spacing": 10,
+  "modules-left": ["custom/launcher", "wlr/workspaces", "custom/dunst", "memory", "temperature", "cpu"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "network", "battery", "bluetooth", "pulseaudio", "custom/powermenu"],
+
+  "custom/launcher": {
+      "interval": "once",
+      "format": "󰣇",
+      "on-click": "pkill rofi || rofi -show drun -threads 0 -font 'Ubuntu Regular 13' -sync -sort -disable-history -show-icons -xoffset -625 -yoffset -200",
+      "tooltip": false
+  },
+
+  "wlr/workspaces": {
+      "active-only": false,
+      "all-outputs": false,
+      "sort-by-name": true,
+      "on-scroll-up": "hyprctl dispatch workspace e+1",
+      "on-scroll-down": "hyprctl dispatch workspace e-1",
+      "format": "{icon}",
+      "format-icons": {
+        "1": "🧑🏻‍💻",
+        "2": "🕵🏻‍♂️",
+        "3": "🔬",
+        "4": "💼",
+        "5": "🎮"
+      },
+      "persistent_workspaces": {
+          "1": [],
+          "2": [],
+          "3": [],
+          "4": [],
+          "5": []
+      },
+  },
+
+  "custom/dunst": {
+      "exec": "sh ~/.config/waybar/scripts/dunst.sh",
+      "on-click-right": "dunstctl set-paused toggle",
+      "restart-interval": 1,
+      "tooltip": false
+  },
+
+  "clock": {
+      "interval": 1,
+      "format": "🗓️  {:%A, %d %b, %Y  🕑  %H:%M}",
+      "tooltip": false
+  },
+
+  "memory": {
+    "interval": 1,
+    "format": "💾 {used:0.1f}G",
+    "tooltip": false
+  },
+
+  "temperature": {
+    "input-filename": "temp1_input",
+    "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon",
+    "critical-threshold": 90,
+    "format-critical": "🔥 {temperatureC}°C",
+    "format": "🥵 {temperatureC}°C",
+    "tooltip": false
+  },
+
+  "cpu": {
+  	"interval": 1,
+  	"format": "🚀 {usage:>2}%",
+  	"tooltip": false
+  },
+
+  "tray": {
+    "icon-size": 21,
+    "spacing": 15,
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "max-volume": 100,
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon}  {volume}%",
+    "format-bluetooth-muted": "🔇  muted",
+    "format-muted": "🔇 muted",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "📾",
+      "car": "🚗",
+      "default": ["🔈 ", "🔉 ", "🔊 "]
+    },
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click": "pavucontrol",
+  	"tooltip": false
+  },
+
+  "bluetooth": {
+    "interval": 1,
+  	"format": "",
+  	"format-off": " ❌",
+  	"format-connected": "  {device_alias}  |  {num_connections}",
+  	"format-connected-battery": "  {device_alias}  {device_battery_percentage}%",
+  	"tooltip": false
+  },
+
+  "network": {
+    "interval": 1,
+    "format": "⚙️ {ifname}",
+    "format-wifi": "🛜  {essid}  |  {signaldBm}dBm  |  🌐  {ipaddr}",
+    "format-ethernet": "🌐 {ifname}",
+    "format-disconnected": "",
+  	"tooltip": false
+  },
+
+  "battery": {
+    "bat": "BAT0",
+    "adapter": "ADP0",
+    "interval": 1,
+    "states": {
+        "warning": 35,
+        "critical": 20
+    },
+    "max-length": 10,
+    "format": "🔋 {capacity}%",
+    "format-warning": "🪫 {capacity}%",
+    "format-critical": "🪫 🗲 {capacity}%",
+    "format-charging": "🔋 🗲 {capacity}%",
+    "format-plugged": "🔋 🔌 {capacity}%",
+    "format-full": "🔋 Full",
+  	"tooltip": false
+  },
+
+  "custom/powermenu": {
+    "format": "",
+    "on-click": "pkill rofi || rofi -show menu -font 'Ubuntu Regular 13' -modi 'menu:sh powermenu' -theme-str 'window {width: 450px;}' -theme-str 'inputbar {enabled: false;}' -theme-str 'listview {lines: 6;}' -xoffset 670 -yoffset -195",
+    "tooltip": false
+  }
+}
