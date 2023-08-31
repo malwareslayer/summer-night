@@ -1,0 +1,94 @@
+* {
+  font-family: "Ubuntu Light", "Font Awesome v4 Compatibility Regular", system-ui;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+window#waybar {
+  background-color: #d3c6aa;
+
+  border-radius: 0 0 15px 15px;
+
+  color: #2d353b;
+
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+#custom-launcher,
+#workspaces,
+#memory,
+#temperature,
+#cpu,
+#clock,
+#custom-dunst,
+#pulseaudio,
+#bluetooth,
+#network,
+#backlight,
+#battery,
+#custom-powermenu {
+  background-color: #2d353b;
+
+  border-radius: 10px;
+
+  color: #d3c6aa;
+
+  margin-bottom: 12px;
+  margin-top: 7px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#workspaces {
+  padding: 0;
+}
+
+#workspaces button {
+  color: #2d353b;
+}
+
+#workspaces button.active {
+  background-color: #7fbbb3;
+
+  color: #2d353b;
+}
+
+#custom-launcher {
+  background-color: #7fbbb3;
+
+  color: #2d353b;
+
+  margin-bottom: 12px;
+  margin-left: 15px;
+  margin-top: 7px;
+
+  padding-left: 20px;
+  padding-right: 21px;
+}
+
+#custom-dunst {
+  background-color: #a7c080;
+
+  color: #2d353b;
+
+  margin-top: 7px;
+  margin-bottom: 12px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#custom-powermenu {
+  background-color: #e67e80;
+
+  border-bottom-color: #543a48;
+
+  color: #2d353b;
+
+  margin-right: 15px;
+
+  padding-left: 20px;
+  padding-right: 23px;
+}
