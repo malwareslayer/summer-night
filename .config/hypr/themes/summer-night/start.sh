@@ -6,7 +6,7 @@ hyprctl setcursor "$(jq -r .themes.cursor ~/.config/hypr/themes/summer-night/con
 
 
 # Monitor
-hyprctl keyword monitor, highres, auto, 1
+hyprctl keyword monitor ,highres,auto,1
 # ===================
 
 
