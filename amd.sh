@@ -2,8 +2,6 @@
 
 sudo pacman -S - < base.list
 
-yay -Si - < foreign.list
-
 sed -i 's/env = LIBVA_DRIVER_NAME,/env = LIBVA_DRIVER_NAME,radeonsi/' .config/hypr/hyprland.conf
 sed -i 's/env = VDPAU_DRIVER,/env = VDPAU_DRIVER,radeonsi/' .config/hypr/hyprland.conf
 sed -i 's/env = __GLX_VENDOR_LIBRARY_NAME,mesa/env = __GLX_VENDOR_LIBRARY_NAME,amd/' .config/hypr/hyprland.conf
