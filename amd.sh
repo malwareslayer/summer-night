@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 
-sudo pacman -S sddm hyprland xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpaper waybar dunst nemo nemo-preview nemo-fileroller blueman pavucontrol gnome-desktop gnome-desktop-4 network-manager-applet jq xorg-xrandr xf86-video-amdgpu brightnessctl
+sudo pacman -S - base.list
+
+yay -S - foreign.list
 
 sed -i 's/env = LIBVA_DRIVER_NAME,/env = LIBVA_DRIVER_NAME,radeonsi/' .config/hypr/hyprland.conf
 sed -i 's/env = VDPAU_DRIVER,/env = VDPAU_DRIVER,radeonsi/' .config/hypr/hyprland.conf
