@@ -1,41 +1,34 @@
-# Gtk Theme
 gtk-theme-name = ""
 
-# Icon Theme
 gtk-icon-theme-name = ""
-# gtk-icon-sizes
 gtk-fallback-icon-theme = "Adwaita"
 
-# Cursor Theme
 gtk-cursor-theme-name = ""
 # gtk-cursor-aspect-ratio
 gtk-cursor-blink = true
 # gtk-cursor-blink-time = 1
 gtk-cursor-blink-timeout = 1
-gtk-cursor-theme-size = 14
+# gtk-cursor-theme-size = 14
 
-# Font Theme
 gtk-font-name = ""
 
-
-# Misc
-gtk-alternative-button-order = false
-gtk-alternative-sort-arrows = false
+# gtk-alternative-button-order = false
+# gtk-alternative-sort-arrows = false
 
 gtk-application-prefer-dark-theme = true
 
-gtk-auto-mnemonics = false
+# gtk-auto-mnemonics = false
 
 gtk-button-images = true
 
-gtk-can-change-accels = false
+# gtk-can-change-accels = false
 
 # gtk-color-palette
 # gtk-color-scheme
 
 # gtk-decoration-layout
 
-gtk-dialogs-use-header = true
+# gtk-dialogs-use-header = true
 
 # gtk-dnd-drag-threshold
 
@@ -46,12 +39,12 @@ gtk-enable-accels = true
 gtk-enable-animations = true
 gtk-enable-event-sounds = true
 gtk-enable-input-feedback-sounds = true
-gtk-enable-mnemonics = false
-gtk-enable-primary-paste = false
-gtk-enable-tooltips = true
+# gtk-enable-mnemonics = false
+# gtk-enable-primary-paste = false
+# gtk-enable-tooltips = true
 
 # gtk-entry-password-hint-timeout
-gtk-entry-select-on-focus = true
+# gtk-entry-select-on-focus = true
 
 gtk-error-bell = true
 
@@ -69,7 +62,7 @@ gtk-im-module = ibus
 # gtk-keynav-use-caret
 # gtk-keynav-wrap-around
 
-gtk-label-select-on-focus = true
+# gtk-label-select-on-focus = true
 
 # gtk-long-press-time
 
@@ -88,22 +81,22 @@ gtk-overlay-scrolling = true
 # gtk-print-backends
 # gtk-print-preview-command
 
-gtk-recent-files-enabled = true
-gtk-recent-files-limit = 25
-gtk-recent-files-max-age = 3
+# gtk-recent-files-enabled = true
+# gtk-recent-files-limit = 25
+# gtk-recent-files-max-age = 3
 
 # gtk-scrolled-window-placement
 
-gtk-shell-shows-app-menu = false
-gtk-shell-shows-desktop = false
-gtk-shell-shows-menubar = false
+# gtk-shell-shows-app-menu = false
+# gtk-shell-shows-desktop = false
+# gtk-shell-shows-menubar = false
 
 # gtk-show-input-method-menu
 # gtk-show-unicode-menu
 
 # gtk-sound-theme-name
 
-gtk-split-cursor = true
+# gtk-split-cursor = true
 
 # gtk-timeout-expand
 # gtk-timeout-initial
@@ -120,7 +113,7 @@ gtk-split-cursor = true
 # gtk-tooltip-browse-timeout
 # gtk-tooltip-timeout
 
-gtk-touchscreen-mode = true
+# gtk-touchscreen-mode = true
 
 # gtk-visible-focus
 
