@@ -5,7 +5,6 @@ colord-gtk-common
 colord-gtk4
 egl-wayland
 gdm
-gnome-initial-setup
 gtk2
 gtk2+extra
 gtk3
