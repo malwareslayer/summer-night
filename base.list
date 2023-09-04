@@ -5,8 +5,10 @@ colord-gtk-common
 colord-gtk4
 egl-wayland
 gdm
+gnome-text-editor
+gnome-control-center
+gnome-software
 gtk2
-gtk2+extra
 gtk3
 gtk4
 hyprland
